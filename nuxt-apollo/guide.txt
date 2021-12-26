@@ -1,0 +1,33 @@
+npm run dev
+mongodb 설치 및 접속: mongodb://localhost:27017/mydbname?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
+#1 _slug폴더를 이용해 중간에 파라미터 넣어서 route 하기, route 파라미터 validation 체크
+#2 route _id.vue 로 주소의 param값 출력
+#3 route index.vue 자동 첫 페이지가 됨
+#4 apollo select all
+#5 apollo select one 파라미터 넣는 방식
+#6 apollo variables() -> data()에 영향을 줌
+#7 view 단에서 apollo 결과물 실시간 출력 
+#8 nuxt-link nuxt-child
+#9 apollo object 안의 object select 하기
+#10 fetch를 활용해서 첫페이지에 어떤 param 값을 default 할지 정해줌 보통 첫페이지로딩시 하는 일들 처리\
+#11 server side apollo: typeDefs, resolvers, apollo-server 
+#12 nanoid 임시 id 만들기
+#13 submit.prevent @submit 액션을 취하되, 다른것은 아무것도 하지 않음
+#14 payload 방식 parameter 
+#15 mongoose 를 이용한 mongodb 연결
+#16 쿼리가 끝나면 행동하는 result
+#17 asyncData lifecycle
+#18 @hapi/joi validate
+#19 graphql error handling
+#20 graphql 파일 schema를 이용한 server 가용
+#21 bcrypt
+#22 jsonwebtoken
+#23 lodash
+#24 dotenv, process.env
+#25 메일 보내기(https://app.sendgrid.com/guide/integrate 에 등록 및 api 받기)
+#26 confirmation web page, vue 단에서 apolloprovider 호출
+
+
+----------------------------------------------------------------
+
+front(index.vue - asyncData - getCharacters 호출 / nuxt.config.js - apollo.clientConfigs.default.httpEndpoint) | back(graphqlTest.graphql / index.js - resolvers - new ApolloServer({..., 'schema.graphql', ...}) - server.listen() / Query.js - Query.characters() / Characters.js - mongoose.schema() - mongoose.model('Character', schema) - exports.Character)
